@@ -10,3 +10,5 @@ def CountTrue(a):
 a = ["True", "false", "true", "true", "false", "false"]
 print(CountTrue(a))
 
+
+
