@@ -13,3 +13,6 @@ for i in range(N):
         num = num+6
 
     print()
+
+    
+    
