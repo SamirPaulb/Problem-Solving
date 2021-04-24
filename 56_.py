@@ -45,6 +45,13 @@ Note
 
 '''
 
+
+
+
+
+
+# Solution 1
+"""
 x,k = input("").split(' ')
 x = int(x)
 k = int(k)
@@ -71,3 +78,43 @@ TotalCandy = (sum1(x,k) + sum2(x,k))/2
 
 
 print(int(TotalCandy))
+
+"""
+
+
+
+
+
+# Solution 2
+'''
+
+import sys
+arr = list(map(int, input().split()))
+n=arr[0]
+k=arr[1]
+if(n==0):
+    print(0)
+    sys.exit()
+r=(10**9)+7
+a=pow(2,k,r)
+b=(2*n-1)%r
+ans=(a*b)%r
+if(ans+1==r):
+    print(0)
+else:
+    print(ans+1)
+
+'''
+
+
+
+
+
+
+
+
+# Best Solution
+
+a,k=map(int, input(). split())
+mod=1000000007
+print((pow(2,k+1,mod)*a-pow(2,k,mod)+1)%mod if a>0 else 0)
