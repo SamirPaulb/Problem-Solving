@@ -1,8 +1,4 @@
-# Python3 program for the above approach
-
-# Function to determine how many days
-# required to wait for the next
-# warmer temperature
+# Function to determine how many days required to wait for the next warmer day
 def dailyTemperatures(T):
 
 	n = len(T)
